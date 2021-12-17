@@ -1,0 +1,12 @@
+# These files are temporary files for the current deployment
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+
+# This file contains sensitive proxmox tokens
+vars.tf
+
+# These files contain sensitive information about accessing the rke k8s cluster
+kube_cluster_config.yml
+cluster.rkestate

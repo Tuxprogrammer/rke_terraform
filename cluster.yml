@@ -1,0 +1,79 @@
+# Set the name of the Kubernetes cluster  
+cluster_name: tuxhpc-k8s
+ssh_agent_auth: true
+addon_job_timeout: 360
+
+nodes:
+  #
+  - address: 10.2.0.10
+    user: ubuntu
+    role:
+      - controlplane
+      - etcd
+  - address: 10.2.0.11
+    user: ubuntu
+    role:
+      - worker
+  # - address: 10.2.0.12
+  #   user: ubuntu
+  #   role:
+  #     - worker
+  # - address: 10.2.0.13
+  #   user: ubuntu
+  #   role:
+  #     - worker
+  #
+  - address: 10.2.0.20
+    user: ubuntu
+    role:
+      - controlplane
+      - etcd
+  - address: 10.2.0.21
+    user: ubuntu
+    role:
+      - worker
+  # - address: 10.2.0.22
+  #   user: ubuntu
+  #   role:
+  #     - worker
+  # - address: 10.2.0.23
+  #   user: ubuntu
+  #   role:
+  #     - worker
+  #
+  - address: 10.2.0.30
+    user: ubuntu
+    role:
+      - controlplane
+      - etcd
+  - address: 10.2.0.31
+    user: ubuntu
+    role:
+      - worker
+  # - address: 10.2.0.32
+  #   user: ubuntu
+  #   role:
+  #     - worker
+  # - address: 10.2.0.33
+  #   user: ubuntu
+  #   role:
+  #     - worker
+  #
+  - address: 10.2.0.40
+    user: ubuntu
+    role:
+      - controlplane
+      - etcd
+  - address: 10.2.0.41
+    user: ubuntu
+    role:
+      - worker
+  # - address: 10.2.0.42
+  #   user: ubuntu
+  #   role:
+  #     - worker
+  # - address: 10.2.0.43
+  #   user: ubuntu
+  #   role:
+  #     - worker
+  
